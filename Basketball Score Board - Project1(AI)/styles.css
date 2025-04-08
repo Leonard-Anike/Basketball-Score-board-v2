@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0.7em;
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    color:rgb(88, 160, 136);
+}
+
+#score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.875rem;
+    color: #EEEEEE;
+    margin: 1em 0 0.2em;
+}
+
+.score-display-el {
+    background: #080001;
+    font-family: Cursed Timer ULiL;
+    font-size: 5.625rem;
+    color: #FFFFFF;
+    width: 51.389vw;
+    height: 22.297vh;
+    align-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 1.125rem;
+    color: #9AABD8;
+    border: 0.125em solid #9AABD8;
+    margin-top: 0.7em;
+    padding: 0.5em;
+}
+
+#reset-btn {
+    font-size: 1.688rem;
+    color: #CBBD29;
+    margin-top: 0.9em;
+    border: 0.0188rem solid;
+    padding: 0.37em 0.56em 0.24em;
+}
+
+body, button {
+    background: #1B244A;
+}
+
+header, #score-container, #reset-btn {
+    text-align: center;
+}
+
+.score-display-el, button {
+    border-radius: 0.313rem;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basketball Score Board</title>
+</head>
+<body>
+    <header id="container">
+        <h1>BASKETBALL SCORE BOARD</h1>
+    </header>
+    <main id="container">
+        <section id="score-container">
+            <div>
+            <h2>HOME</h2>
+            <p id="display1" class="score-display-el">0</p>
+                <div class="btn">
+                    <button class="increment-btn" data-display="1" value="1"> +1 </button>
+                    <button class="increment-btn" data-display="1" value="2"> +2 </button>
+                    <button class="increment-btn" data-display="1" value="3"> +3 </button>
+                </div>
+            </div>
+        
+            <div>
+                <h2> GUEST </h2>
+                <p id="display2" class="score-display-el">0</p>
+                <div class="btn">
+                    <button class="increment-btn" data-display="2" value="1"> +1 </button>
+                    <button class="increment-btn" data-display="2" value="2"> +2 </button>
+                    <button class="increment-btn" data-display="2" value="3"> +3 </button>
+                </div>
+            </div>
+
+            <button id="reset-btn"> RESET </button>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
