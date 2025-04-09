@@ -4,16 +4,17 @@
 }
 
 body {
+    position: relative;
     margin: 0.7em;
 }
 
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.9rem;
-    color:rgb(88, 160, 136);
+    font-size: 0.85rem;
+    color:#BEDA24;
 }
 
-#score-container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +23,7 @@ header {
 
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.875rem;
+    font-size: 2.188rem;
     color: #EEEEEE;
     margin: 1em 0 0.2em;
 }
@@ -31,9 +32,10 @@ h2 {
     background: #080001;
     font-family: Cursed Timer ULiL;
     font-size: 5.625rem;
-    color: #FFFFFF;
-    width: 51.389vw;
-    height: 22.297vh;
+    color: #F94F6D;
+    width: 57vw;
+    max-width: 300px;
+    height: 20vh;
     align-content: center;
 }
 
@@ -52,9 +54,9 @@ button {
 
 #reset-btn {
     font-size: 1.688rem;
-    color: #CBBD29;
-    margin-top: 0.9em;
-    border: 0.0188rem solid;
+    color: #BEDA24;
+    margin-top: 1.5em;
+    border: 0.0188rem solid #9AABD8;
     padding: 0.37em 0.56em 0.24em;
 }
 
@@ -68,4 +70,45 @@ header, #score-container, #reset-btn {
 
 .score-display-el, button {
     border-radius: 0.313rem;
+}
+
+/* Media Querry */
+
+@media (min-width: 650px) {
+    header {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2.188rem;
+        margin-top: 1em;
+    }
+
+    #score-container {
+        display: flex;
+        flex-direction: row;
+        gap: 12.5rem;
+
+    }
+
+    .score-display-el {
+        width: 30vw;
+        height: 37vh;
+    }
+
+    #reset-btn {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    button {
+        font-size: 1.5rem;
+        color: #9AABD8;
+        border: 0.125em solid #9AABD8;
+        margin-top: 0.7em;
+        padding: 0.4em;
+    }
+
 }
